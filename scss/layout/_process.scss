@@ -1,0 +1,28 @@
+.process-div {
+  max-width: 100%;
+  margin: 0;
+  padding: 50px 5%;
+  background-color: $onahau;
+  @media (min-width: $break-m) {
+      clear: both;
+    }
+  @media (min-width: $break-l) {
+      @include div-width(95%, 2.5%, 2.5%);
+    }
+  ul {
+    padding-left: 5%;
+    @media (min-width: $break-m) {
+      padding-left: 0;
+    }
+  }
+  li {
+    text-align: left;
+    font-weight: 400;
+    @extend %lato;
+    @media (min-width: $break-m) {
+      list-style: none;
+      text-align: center;
+      line-height: 1.5em;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+//========== FONTS ==========
+@mixin font-prop(
+$font-sz: null,
+$font-wt: null,
+$font-color: null
+) {
+  font-size: $font-sz;
+  font-weight: $font-wt;
+  color: $font-color;
+}
+
+@mixin div-width(
+$width: null,
+$m-left: null,
+$m-right: null,
+$m-top: null,
+$m-bottom: null
+) {
+  width: $width;
+  margin-left: $m-left;
+  margin-right: $m-right;
+  margin-top: $m-top;
+  margin-bottom: $m-bottom;
+}

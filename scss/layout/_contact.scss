@@ -1,0 +1,28 @@
+.contact-div {
+  background-color: $wild-sand;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  li {
+   list-style: none;
+   @extend %lato;
+ }
+  p {
+   @extend %wide;
+   @media (min-width: $break-m) {
+     @include div-width(75%, 12.5%, 12.5%);
+   }
+   @media (min-width: $break-m) {
+     @include div-width(58%, 21%, 21%);
+   }
+ }
+}
+
+.contact-div a {
+  @include font-prop(null, 700, null);
+  padding-left: .5em;
+  line-height: 2.25em;
+  color: $black;
+  &:hover {
+    color: $grey;
+  }
+}

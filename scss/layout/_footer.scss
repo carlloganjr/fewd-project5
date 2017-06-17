@@ -1,0 +1,57 @@
+footer {
+  @extend %wide;
+  @extend %robo;
+  background-color: $wild-sand;
+  text-align: left;
+  border-top: 1px solid $lightgrey;
+  padding: 25px 0;
+}
+
+footer a {
+  @include font-prop(null, null, $black);
+  &:visited {
+    color: $grey;
+  }
+  &:hover {
+    color: $dark-grey;
+  }
+}
+
+.footer-name {
+  display: inline;
+  margin-right: calc(100% - 190px);
+  @extend .footer-nav;
+  @media (min-width: $break-m) {
+    margin-right: calc(100% - 415px);
+  }
+  @media (min-width: $break-l) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-nav {
+  display: inline-block;
+  list-style: none;
+  @include div-width(null, null, null, 10px, 10px);
+  @media (min-width: $break-m) {
+    @extend %footer-nav;
+  }
+}
+
+.secondary-nav {
+  display: none;
+  @media (min-width: $break-m) {
+    @extend %footer-nav;
+    display: inline-block;
+    @include div-width(null, 10px, 10px);
+  }
+  @media (min-width: $break-l) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $break-m) {
+  .back {
+    display: none;
+  }
+}

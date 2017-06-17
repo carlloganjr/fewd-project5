@@ -1,0 +1,52 @@
+.top-div {
+  background-color: $wild-sand;
+  padding-bottom: 25px;
+  @media (min-width: $break-m) {
+    padding-bottom: 50px;
+    &::after {
+      @extend %clear;
+    }
+  }
+}
+
+.profile-image {
+  @include div-width(65%, null, null, 2em, 7px);
+  @media (min-width: $break-m) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.profile-para {
+  @extend %wide;
+  @media (min-width: $break-m) {
+    width: calc(100vw - 40% - 50px);
+    text-align: left;
+    margin: 0 0 0 5%;
+    padding-right: 10px;
+    p {
+      margin-top: -10px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.f-size {
+  @include font-prop(1.05em);
+  @media (min-width: $break-m) {
+    @include font-prop(1.4em);
+  }
+}
+
+.profile-pic {
+  @media (min-width: $break-m) {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+    padding-left: 15px;
+  }
+  @media (min-width: $break-l) {
+    width: 35%;
+    padding-left: 1%;
+  }
+}

@@ -1,0 +1,31 @@
+%robo {
+  font-family: $robo;
+}
+
+%lato {
+  font-family: $lato;
+}
+
+%wide {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media (min-width: $break-m) {
+  %flow {
+    float: left;
+    width: 50%;
+  }
+
+  %footer-nav {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
+  %clear {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
