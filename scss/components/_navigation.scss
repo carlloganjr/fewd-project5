@@ -38,15 +38,16 @@ nav a {
     color: $black;
     @include font-prop(1.125em);
   }
-  &:hover {
-    background-color: $grey;
-    color: $white;
-    @media (min-width: $break-m) {
-      background-color: $wild-sand;
-      color: $dark-grey;
-    }
-  }
   &:visited {
-    color: $grey;
+    color: $lightgrey;
+  }
+}
+
+nav a:hover {
+  background-color: $grey;
+  color: $white;
+  @media (min-width: $break-m) {
+    background-color: $wild-sand;
+    color: $dark-grey;
   }
 }
