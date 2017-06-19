@@ -1,4 +1,5 @@
 //========== FONTS ==========
+
 @mixin font-prop(
 $font-sz: null,
 $font-wt: null,
@@ -8,6 +9,9 @@ $font-color: null
   font-weight: $font-wt;
   color: $font-color;
 }
+
+
+//========== DIV WIDTH & MARGINS ==========
 
 @mixin div-width(
 $width: null,
